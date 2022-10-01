@@ -21,7 +21,6 @@
 .card-title {
   grid-area: title;
   color: #483838;
-  /* margin: 1.5rem; */
   font-size: 1.25rem;
   font-weight: bold;
   overflow: hidden;
@@ -31,7 +30,6 @@
 .card-description {
   grid-area: description;
   color: #42855B;
-  /* margin: 0.1rem; */
   font-size: 0.75rem;
   font-weight: normal;
   overflow: hidden;
@@ -81,7 +79,6 @@
     font-weight: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* align-items: flex-start; */
   }
 }
 

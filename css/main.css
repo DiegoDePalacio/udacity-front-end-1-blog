@@ -21,9 +21,6 @@ body {
   grid-area: s;
   background-color: #483838;
   position: sticky;
-  /* display: flex;
-  flex-direction: column;
-  padding: 20px; */
 }
 
 .content {
@@ -34,15 +31,7 @@ body {
   flex-basis: 18.75rem;
   background-color: #D2D79F;
   justify-content: space-evenly;
-  /* justify-content: space-between; */
 }
-
-/* .content::after {
-  content: "";
-  flex-basis: 18.75rem;
-  flex-grow: 0.9;
-  flex: auto;
-} */
 
 .footer {
   grid-area: f;
@@ -88,7 +77,6 @@ body {
   .floating-first {
     position: absolute;
     top: 1rem;
-    /* left: 1rem; */
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -99,7 +87,6 @@ body {
   .floating-second {
     position: absolute;
     top: 3rem;
-    /* left: 1rem; */
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
