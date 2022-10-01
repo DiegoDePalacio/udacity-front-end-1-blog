@@ -25,6 +25,17 @@
   font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
+  align-self: center;
+  max-height: 3.5rem;
+}
+
+.card-title > h2 {
+  margin: 0;
+  padding: 1rem;
+  max-height: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .card-description {
@@ -33,8 +44,24 @@
   font-size: 0.75rem;
   font-weight: normal;
   overflow: hidden;
-  text-overflow: ellipsis;
+  max-height: 3.5rem;
+  margin: 0 1rem 0 1rem;
 }
+
+.card-description > p {
+  margin: 0.5rem 0 0.5rem 0;
+  max-height: 3rem;
+}
+
+/* Use this for one line cut with ellipsis at the end.
+   Unfortunately, seems that no easy way exists for supporting multi-line blocks with only HTML + CSS:
+   https://stackoverflow.com/questions/6222616/with-css-use-for-overflowed-block-of-multi-lines */
+/* .card-description > p {
+  max-height: 3.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} */
 
 .card-image {
   grid-area: image;
