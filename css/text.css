@@ -1,0 +1,72 @@
+.light-text {
+  color: white;
+}
+
+.dark-text {
+  color: #483838;
+}
+
+.light-anchor:link {
+  color: white;
+  background-color: solid;
+  text-decoration: none;
+}
+
+.light-anchor:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.light-anchor:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+  transform: scale(1.01);
+}
+
+.light-anchor:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+  transform: scale(1.01);
+}
+
+.dark-anchor:link {
+  color: #483838;
+  background-color: solid;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dark-anchor:visited {
+  color: #483838;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dark-anchor:hover {
+  color: #483838;
+  background-color: transparent;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.dark-anchor:active {
+  color: #483838;
+  background-color: transparent;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}

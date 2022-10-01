@@ -1,0 +1,16 @@
+.btn {
+  background: #90B77D;
+  background-image: linear-gradient(to bottom, #90B77D, #42855B);
+  border-radius: 0.5rem;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1.25rem;
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #D2D79F;
+  background-image: linear-gradient(to bottom, #D2D79F, #90B77D);
+  text-decoration: none;
+}

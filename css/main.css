@@ -1,0 +1,109 @@
+@import "card.css";
+@import "text.css";
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 12.5rem repeat(15, 1fr);
+  grid-template-rows: 5rem auto 5rem;
+  grid-template-areas:
+    "h h h h h h h h h h h h h h h h"
+    "s c c c c c c c c c c c c c c c"
+    "f f f f f f f f f f f f f f f f";
+}
+
+.header {
+  grid-area: h;
+  background-color: #90B77D;
+}
+
+.side-bar {
+  grid-area: s;
+  background-color: #483838;
+  position: sticky;
+  /* display: flex;
+  flex-direction: column;
+  padding: 20px; */
+}
+
+.content {
+  grid-area: c;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 18.75rem;
+  background-color: #D2D79F;
+  justify-content: space-evenly;
+  /* justify-content: space-between; */
+}
+
+/* .content::after {
+  content: "";
+  flex-basis: 18.75rem;
+  flex-grow: 0.9;
+  flex: auto;
+} */
+
+.footer {
+  grid-area: f;
+  background-color: #90B77D;
+}
+
+.floating-first {
+  position: fixed;
+  top: 8rem;
+  left: 1rem;
+}
+
+.floating-second {
+  position: fixed;
+  top: 10rem;
+  left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 5rem auto 5rem;
+    grid-template-areas:
+      "h"
+      "s"
+      "c"
+      "f";
+  }
+
+  .side-bar {
+    grid-area: s;
+    background-color: #483838;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .floating-first {
+    position: absolute;
+    top: 1rem;
+    /* left: 1rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .floating-second {
+    position: absolute;
+    top: 3rem;
+    /* left: 1rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

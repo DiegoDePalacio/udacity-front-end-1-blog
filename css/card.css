@@ -1,0 +1,176 @@
+.card {
+  display: grid;
+  margin: 1.875rem;
+  grid-template-columns: 18.75rem;
+  grid-template-rows: 3.75rem 3.75rem 15rem;
+  grid-template-areas:
+    "title"
+    "description"
+    "image";
+
+  font-family: serif;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0.3rem 0.3rem 0.9rem rgba(0, 0, 0, 0.9);
+  text-align: center;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card-title {
+  grid-area: title;
+  color: #483838;
+  /* margin: 1.5rem; */
+  font-size: 1.25rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-description {
+  grid-area: description;
+  color: #42855B;
+  /* margin: 0.1rem; */
+  font-size: 0.75rem;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-image {
+  grid-area: image;
+  margin-top: 1.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-size: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0.3rem 0.3rem 0.9rem rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 350px) {
+  .card {
+    height: 22.5rem;
+    display: grid;
+    margin: 1.875rem;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 1fr 2fr;
+    grid-template-areas:
+      "title"
+      "description"
+      "image";
+
+    font-family: serif;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0.3rem 0.3rem 0.9rem rgba(0, 0, 0, 0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  .card-description {
+    grid-area: description;
+    color: #42855B;
+    margin: 0.1rem;
+    font-size: 0.75rem;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* align-items: flex-start; */
+  }
+}
+
+.card-image.post1 {
+  background: url("../images/post1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post2 {
+  background: url("../images/post2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post3 {
+  background: url("../images/post3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post4 {
+  background: url("../images/post4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post5 {
+  background: url("../images/post5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post6 {
+  background: url("../images/post6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post7 {
+  background: url("../images/post7.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post8 {
+  background: url("../images/post8.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post9 {
+  background: url("../images/post9.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post10 {
+  background: url("../images/post10.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post11 {
+  background: url("../images/post11.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post12 {
+  background: url("../images/post12.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post13 {
+  background: url("../images/post13.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post14 {
+  background: url("../images/post14.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image.post15 {
+  background: url("../images/post15.jpg");
+  background-size: cover;
+  background-position: center;
+}

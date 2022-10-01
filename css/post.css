@@ -1,0 +1,144 @@
+@import "button.css";
+@import "text.css";
+
+body {
+  margin: 0;
+  /* padding-left: 2.5rem;
+  padding-right: 2.5rem; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 5rem auto auto auto 5rem;
+  grid-template-areas:
+    "title title title title title"
+    "text text text text text"
+    "avatar author author author author"
+    "twitter . facebook . linkedin"
+    "home home home home home";
+  grid-column-gap: 0.6rem;
+}
+
+.post-title {
+  grid-area: title;
+  background-color: #483838;
+  padding-left: 2.5rem;
+}
+
+.post-text {
+  grid-area: text;
+  background-color: #D2D79F;
+  padding: 1.5rem 2.5rem 1.5rem 5rem;
+}
+
+.post-avatar {
+  grid-area: avatar;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.post-author {
+  grid-area: author;
+  padding: 1.5rem 2.5rem 1.5rem 0;
+}
+
+.post-home {
+  grid-area: home;
+  background-color: #483838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-home-button {
+  /* position: absolute; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  /* bottom: 1rem; */
+
+  /* top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+  /* align-self: center;
+  justify-self: center; */
+}
+
+.post-twitter {
+  grid-area: twitter;
+  align-self: center;
+  justify-self: center;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+.post-facebook {
+  grid-area: facebook;
+  align-self: center;
+  justify-self: center;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+.post-linkedin {
+  grid-area: linkedin;
+  align-self: center;
+  justify-self: center;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+.post-avatar.avatar1 {
+  background: url("../images/avatar1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    /* padding-left: 2.5rem;
+    padding-right: 2.5rem; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5rem auto auto auto 5rem;
+    grid-template-areas:
+      "title title title"
+      "text text text"
+      "avatar author author"
+      "twitter facebook linkedin"
+      "home home home";
+    grid-column-gap: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0;
+    /* padding-left: 2.5rem;
+    padding-right: 2.5rem; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5rem auto 10rem auto 3rem 3rem 3rem 5rem;
+    grid-template-areas:
+      "title"
+      "text"
+      "avatar"
+      "author"
+      "twitter"
+      "facebook"
+      "linkedin"
+      "home";
+    grid-column-gap: 0.6rem;
+  }
+
+  .post-avatar {
+    grid-area: avatar;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1.5rem;
+  }
+
+  .post-author {
+    grid-area: author;
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+  }
+}
